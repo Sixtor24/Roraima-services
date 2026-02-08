@@ -124,7 +124,7 @@ export const Contact = () => {
               href="https://wa.me/5804122036693"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#25D366] hover:bg-[#1fb855] text-white px-5 py-3 rounded-xl font-semibold transition-all hover:-translate-y-0.5 shadow-lg w-fit"
+              className="flex items-center gap-3 bg-[#25D366] hover:bg-[#1fb855] text-white hover:text-white px-5 py-3 rounded-xl font-semibold transition-all hover:-translate-y-0.5 shadow-lg w-fit"
             >
               <MessageCircle className="w-5 h-5" />
               Escríbenos por WhatsApp

@@ -60,7 +60,7 @@ export const Footer = () => {
             <ul className="flex flex-col gap-2.5">
               <li>Puerto Ordaz</li>
               <li>Estado Bolívar, Venezuela</li>
-              <li>+58 414 123 4567</li>
+              <li>+58 0412-203-6693</li>
               <li>info@carrentalpo.com</li>
             </ul>
           </div>

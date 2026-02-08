@@ -116,13 +116,6 @@ export const Navbar = () => {
               >
                 Nosotros
               </Link>
-              <Link 
-                to="/contact" 
-                onClick={() => setIsMenuOpen(false)}
-                className="text-gray-700 hover:text-primary font-medium py-3 px-3 rounded-lg hover:bg-primary-subtle transition-all"
-              >
-                Contacto
-              </Link>
               <div className="pt-3">
                 <Link 
                   to="/contact" 
