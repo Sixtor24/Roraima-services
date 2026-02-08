@@ -1,0 +1,88 @@
+import type { Car } from '../../domain/entities/Car';
+
+export const MOCK_CARS: Car[] = [
+  {
+    id: '1',
+    name: 'Toyota Corolla',
+    type: 'Sedan',
+    year: 2021,
+    image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=1200&auto=format&fit=crop',
+    pricePerDay: 130,
+    seats: 4,
+    transmission: 'Automatic',
+    fuelType: 'Diesel',
+    location: 'Puerto Ordaz',
+    available: true,
+    description: 'Sedán confiable y económico, perfecto para viajes por la ciudad.'
+  },
+  {
+    id: '2',
+    name: 'BMW X5',
+    type: 'SUV',
+    year: 2006,
+    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop',
+    pricePerDay: 300,
+    seats: 4,
+    transmission: 'Semi-Automatic',
+    fuelType: 'Hybrid',
+    location: 'San Félix',
+    available: true,
+    description: 'SUV de lujo con gran espacio y comodidad.'
+  },
+  {
+    id: '3',
+    name: 'Jeep Wrangler',
+    type: 'SUV',
+    year: 2023,
+    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop',
+    pricePerDay: 200,
+    seats: 4,
+    transmission: 'Automatic',
+    fuelType: 'Hybrid',
+    location: 'Puerto Ordaz',
+    available: true,
+    description: 'Ideal para aventuras off-road y terrenos difíciles.'
+  },
+  {
+    id: '4',
+    name: 'Toyota Corolla',
+    type: 'Sedan',
+    year: 2021,
+    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1200&auto=format&fit=crop',
+    pricePerDay: 130,
+    seats: 4,
+    transmission: 'Manual',
+    fuelType: 'Diesel',
+    location: 'Ciudad Guayana',
+    available: true,
+    description: 'Económico y eficiente para uso diario.'
+  },
+  {
+    id: '5',
+    name: 'Ford Neo 6',
+    type: 'Sedan',
+    year: 2022,
+    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop',
+    pricePerDay: 209,
+    seats: 2,
+    transmission: 'Semi-Automatic',
+    fuelType: 'Diesel',
+    location: 'Upata',
+    available: true,
+    description: 'Compacto y moderno, ideal para parejas.'
+  },
+  {
+    id: '6',
+    name: 'BMW M4',
+    type: 'Sedan',
+    year: 2021,
+    image: 'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop',
+    pricePerDay: 220,
+    seats: 2,
+    transmission: 'Automatic',
+    fuelType: 'Hybrid',
+    location: 'San Félix',
+    available: true,
+    description: 'Deportivo de alto rendimiento con diseño elegante.'
+  },
+];
