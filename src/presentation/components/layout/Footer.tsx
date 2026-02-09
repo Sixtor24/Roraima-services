@@ -4,7 +4,7 @@ import logoVertical from '../../../assets/logo-vertical.avif';
 
 export const Footer = () => {
   return (
-    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 mt-60 text-sm text-muted-foreground">
+    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 mt-60 pb-20 md:pb-0 text-sm text-muted-foreground">
       {/* Accent line at top */}
       <div className="w-full h-px bg-linear-to-r from-transparent via-primary/20 to-transparent mb-12" />
 
@@ -13,7 +13,7 @@ export const Footer = () => {
           <img 
             src={logoVertical} 
             alt="Roraima Services" 
-            className="h-10 md:h-20 w-auto object-contain mb-4"
+            className="h-20 md:h-20 w-auto object-contain mb-4"
           />
           <p className="max-w-80 mt-3 leading-relaxed">
             Servicio premium de alquiler de vehículos en Puerto Ordaz con una amplia selección de carros de lujo y uso diario para todas tus necesidades.

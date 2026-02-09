@@ -37,7 +37,7 @@ export const SearchForm = ({ onSearch }: SearchFormProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.5 }}
       onSubmit={handleSubmit}
-      className="w-full max-w-5xl mx-auto"
+      className="w-full max-w-5xl"
     >
       <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl p-6 md:p-8 border border-white/20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">

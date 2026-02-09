@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Clock, Star, ChevronRight } from 'lucide-react';
+import { ArrowRight, Shield, Clock, Star, ChevronRight, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SearchForm } from '../components/ui/SearchForm';
 import { CarCard } from '../components/ui/CarCard';
@@ -75,8 +75,10 @@ export const Home = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/15 mb-6"
             >
-              <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-white/70 text-xs font-medium tracking-widest uppercase">Puerto Ordaz, Venezuela</span>
+              <span>
+                🇻🇪
+              </span>
+              <span className="text-white/70 text-xs font-medium tracking-widest uppercase">Venezuela, Puerto Ordaz</span>
             </motion.div>
 
             {/* Headline — editorial split */}
