@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Clock, Star, ChevronRight, MapPin } from 'lucide-react';
+import { ArrowRight, Shield, Clock, Star, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SearchForm } from '../components/ui/SearchForm';
 import { CarCard } from '../components/ui/CarCard';
