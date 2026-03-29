@@ -7,7 +7,7 @@ import { CarCard } from '../components/ui/CarCard';
 import { TestimonialCard } from '../components/ui/TestimonialCard';
 import { Newsletter } from '../components/ui/Newsletter';
 import { MOCK_CARS } from '../../shared/data/mockCars';
-import heroBg from '../../assets/pzo.avif';
+import heroBg from '../../assets/altavista.png';
 
 const testimonials = [
   {

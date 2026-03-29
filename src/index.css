@@ -135,7 +135,8 @@ a:hover {
   color: var(--color-primary) !important;
 }
 
-.roraima-calendar .react-datepicker__day--today.react-datepicker__day--selected {
+.roraima-calendar .react-datepicker__day--today.react-datepicker__day--selected,
+.roraima-calendar .react-datepicker__day--today.react-datepicker__day--keyboard-selected {
   color: white !important;
 }
 
