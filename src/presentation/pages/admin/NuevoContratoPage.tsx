@@ -186,7 +186,7 @@ export const NuevoContratoPage = () => {
                 <option value="">Selecciona un vehículo</option>
                 {vehiculos.map((v) => (
                   <option key={v.id} value={v.id}>
-                    {v.marca} {v.modelo} ({v.placa}) — {v.tipo} — Km: {v.kilometrajeActual.toLocaleString()}
+                    {v.marca} {v.modelo} ({v.placa})
                   </option>
                 ))}
               </select>

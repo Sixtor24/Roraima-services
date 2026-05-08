@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -101,9 +101,37 @@ export const Sidebar = ({ collapsed, onToggle, mobileOpen, onMobileClose }: Side
   const location = useLocation();
   const [expandedItems, setExpandedItems] = useState<string[]>([]);
 
+  // Auto-expand the parent whose children match the current route
+  useState(() => {
+    const active = navItems.find(
+      (item) =>
+        item.children &&
+        item.children.some((child) => location.pathname === child.path || location.pathname.startsWith(child.path + '/')),
+    );
+    if (active && !expandedItems.includes(active.label)) {
+      setExpandedItems([active.label]);
+    }
+  });
+
+  // Re-sync when route changes
+  const prevPath = useRef(location.pathname);
+  useEffect(() => {
+    if (prevPath.current !== location.pathname) {
+      prevPath.current = location.pathname;
+      const active = navItems.find(
+        (item) =>
+          item.children &&
+          item.children.some((child) => location.pathname === child.path || location.pathname.startsWith(child.path + '/')),
+      );
+      if (active) {
+        setExpandedItems([active.label]);
+      }
+    }
+  }, [location.pathname]);
+
   const toggleExpanded = (label: string) => {
     setExpandedItems((prev) =>
-      prev.includes(label) ? prev.filter((i) => i !== label) : [...prev, label]
+      prev.includes(label) ? prev.filter((i) => i !== label) : [label]
     );
   };
 

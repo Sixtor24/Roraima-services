@@ -15,10 +15,44 @@ export interface Vehiculo {
   placa: string;
   serialMotor: string;
   kilometrajeActual: number;
+  estado: string;
+  precioPorDia: number;
+  transmision: string;
+  asientos: number;
+  tipoCombustible: string;
+  imagen: string | null;
+  descripcion: string | null;
+  velocidadMaxima: string | null;
+  aceleracion: string | null;
+  autonomia: string | null;
+  caracteristicas: string[];
+}
+
+export interface CreateVehiculoPayload {
+  marca: string;
+  tipo: string;
+  ano: number;
+  modelo: string;
+  color: string;
+  placa: string;
+  serialMotor: string;
+  kilometrajeActual?: number;
+  estado?: string;
+  precioPorDia?: number;
+  transmision?: string;
+  asientos?: number;
+  tipoCombustible?: string;
+  imagen?: string;
+  descripcion?: string;
+  velocidadMaxima?: string;
+  aceleracion?: string;
+  autonomia?: string;
+  caracteristicas?: string[];
 }
 
 export const getVehiculos = () => api.get<Vehiculo[]>('/vehiculos').then((r) => r.data);
 export const getVehiculo = (id: number) => api.get<Vehiculo>(`/vehiculos/${id}`).then((r) => r.data);
+export const createVehiculo = (data: CreateVehiculoPayload) => api.post<Vehiculo>('/vehiculos', data).then((r) => r.data);
 
 // ── Clientes ──
 export interface Cliente {
@@ -30,8 +64,10 @@ export interface Cliente {
   email: string | null;
 }
 
+export const getClientes = () => api.get<Cliente[]>('/clientes').then((r) => r.data);
 export const buscarClientePorCedula = (cedula: string) =>
   api.get<Cliente>(`/clientes?cedula=${encodeURIComponent(cedula)}`).then((r) => r.data);
+export const createCliente = (data: Omit<Cliente, 'id'>) => api.post<Cliente>('/clientes', data).then((r) => r.data);
 
 // ── Contratos ──
 export interface Contrato {
