@@ -50,9 +50,17 @@ const navItems: NavItem[] = [
     path: '/admin/rentals',
     icon: CalendarDays,
     children: [
-      { label: 'Contratos', path: '/admin/rentals' },
+      { label: 'Reservas', path: '/admin/rentals' },
       { label: 'Calendario', path: '/admin/rentals/calendar' },
-      { label: 'Nuevo Alquiler', path: '/admin/rentals/new' },
+    ],
+  },
+  {
+    label: 'Contratos',
+    path: '/admin/contratos',
+    icon: FolderOpen,
+    children: [
+      { label: 'Lista de Contratos', path: '/admin/contratos' },
+      { label: 'Nuevo Contrato', path: '/admin/contratos/nuevo' },
     ],
   },
   { label: 'Clientes', path: '/admin/clients', icon: Users },

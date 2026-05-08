@@ -11,6 +11,8 @@ import { DashboardHome } from '../pages/admin/DashboardHome';
 import { BookingsPage } from '../pages/admin/BookingsPage';
 import { VehiclesPage } from '../pages/admin/VehiclesPage';
 import { VehicleDetailsPage } from '../pages/admin/VehicleDetailsPage';
+import { ContratosPage } from '../pages/admin/ContratosPage';
+import { NuevoContratoPage } from '../pages/admin/NuevoContratoPage';
 import { PlaceholderPage } from '../pages/admin/PlaceholderPage';
 
 export const AppRouter = () => {
@@ -35,6 +37,8 @@ export const AppRouter = () => {
           <Route path="vehicles/:id" element={<VehicleDetailsPage />} />
           <Route path="rentals" element={<BookingsPage />} />
           <Route path="rentals/calendar" element={<PlaceholderPage title="Calendario de Reservas" description="Vista de disponibilidad de vehículos por día, semana y mes." />} />
+          <Route path="contratos" element={<ContratosPage />} />
+          <Route path="contratos/nuevo" element={<NuevoContratoPage />} />
           <Route path="rentals/new" element={<PlaceholderPage title="Nuevo Alquiler" />} />
           <Route path="rentals/:id" element={<PlaceholderPage title="Detalle del Contrato" />} />
           <Route path="clients" element={<PlaceholderPage title="Clientes" description="Registro y gestión de clientes con historial de alquileres." />} />
